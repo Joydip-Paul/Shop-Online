@@ -1,4 +1,8 @@
 @import './assets/css/export.scss';
+@import "keep-react/src/main.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .container {
     @include breakpoint-max(991px) {
