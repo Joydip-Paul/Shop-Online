@@ -2,7 +2,8 @@ import Header from './common/header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/HomePage/Home';
 import Shop from './components/Shop/Shop';
-// import 'App.scss';
+import { Footer } from './common/Footer/Footer';
+import './App.scss';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

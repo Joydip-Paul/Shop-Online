@@ -2,16 +2,19 @@ import React from 'react'
 import heroBg from '../../assets/images/hero1.jpeg';
 
 var heroBanner = {
-    width: "100%",
-    height: "400px",
     backgroundImage: "url(" + heroBg + ")"
 };
 
 export const Hero = () => {
     return (
-        <section style={heroBanner}>
+        <section style={heroBanner} className='home-hero'>
             <div className='container'>
-                <h1>Buy From Jhakanaka</h1>
+                <div className='home-hero__content'>
+                    <h1>Buy From Jhakanaka</h1>
+                    <div className="search">
+                        <input type="text" placeholder='Search...' />
+                    </div>
+                </div>
             </div>
         </section>
     )
